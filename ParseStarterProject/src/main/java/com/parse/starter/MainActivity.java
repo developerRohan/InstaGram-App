@@ -8,12 +8,16 @@
  */
 package com.parse.starter;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,7 +28,7 @@ import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener {
 
   TextView changeSignUpModeTextView ;
   EditText usernameEditText ;
@@ -41,7 +45,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     passwordEditText = (EditText)findViewById(R.id.passwordEditText);
     changeSignUpModeTextView = (TextView)findViewById(R.id.changeSignUpModeTextView);
     changeSignUpModeTextView.setOnClickListener(this);
+    passwordEditText.setOnKeyListener(this);
+      RelativeLayout relativeLayoutView = (RelativeLayout)findViewById(R.id.relativeLayoutVIew);
+      relativeLayoutView.setOnClickListener(this);
     ParseAnalytics.trackAppOpenedInBackground(getIntent());
+  }
+
+  @Override
+  public boolean onKey(View view, int i, KeyEvent keyEvent) {
+    if(i == KeyEvent.KEYCODE_ENTER && keyEvent.getAction() == keyEvent.ACTION_DOWN){
+      signUp(view);
+    }
+    return false;
   }
 
 
@@ -62,6 +77,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         changeSignUpModeTextView.setText("or, LOGIN");
 
       }
+    }else if(view.getId() == R.id.relativeLayoutVIew){
+        InputMethodManager mgr = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        mgr.hideSoftInputFromWindow(getCurrentFocus().getWindowToken() , 0);
     }
   }
 
@@ -79,7 +97,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(e==null){
               Log.i("sign up" , "successsful");
             }else{
-              Log.d("sign up" , "error");
+              Log.d("sign up" , "error:" + " "+ e);
             }
           }
         });
@@ -90,7 +108,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             if(e==null){
               Log.i("log in" , "successsful");
             }else{
-              Log.d("log in" , "error");
+              Log.d("log in" , "error:" + " "+ e);
             }
           }
         });
@@ -99,6 +117,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
   }
+
 
 
 }
