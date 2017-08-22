@@ -13,7 +13,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.KeyEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
@@ -29,7 +28,7 @@ import com.parse.ParseUser;
 import com.parse.SignUpCallback;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnKeyListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
   TextView changeSignUpModeTextView;
   EditText usernameEditText;
@@ -49,7 +48,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     passwordEditText = (EditText) findViewById(R.id.passwordEditText);
     changeSignUpModeTextView = (TextView) findViewById(R.id.changeSignUpModeTextView);
     changeSignUpModeTextView.setOnClickListener(this);
-    passwordEditText.setOnKeyListener(this);
+//    passwordEditText.setOnKeyListener(this);
     RelativeLayout relativeLayoutView = (RelativeLayout) findViewById(R.id.relativeLayoutVIew);
     relativeLayoutView.setOnClickListener(this);
 
@@ -60,13 +59,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
   }
 
 
-  @Override
-  public boolean onKey(View view, int i, KeyEvent keyEvent) {
-    if (i == KeyEvent.KEYCODE_ENTER && keyEvent.getAction() == keyEvent.ACTION_DOWN) {
-      signUp(view);
-    }
-    return false;
-  }
+
 
 
   @Override

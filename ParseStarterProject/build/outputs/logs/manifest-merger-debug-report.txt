@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:9:1-41:12
+ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:9:1-42:12
 	package
 		ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:10:5-32
 		INJECTED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/
 	android:name
 		ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:14:22-76
 application
-ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:16:5-39:19
+ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:16:5-40:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] /home/hi/.android/build-cache/cce10b6d8d9a46917443a24731d36b9790a343de/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] /home/hi/.android/build-cache/a9597a7a42bf277c276227a1d93b1895ef474210/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/hi/.android/build-cache/7b98546c444004830c82c6571413862e45f356fc/output/AndroidManifest.xml:9:5-20
@@ -69,9 +69,13 @@ ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/
 	android:name
 		ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:35:27-74
 activity#com.parse.starter.UserListActivity
-ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:38:9-63
+ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:38:9-54
 	android:name
 		ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:38:19-51
+activity#com.parse.starter.UserFeedActivity
+ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:39:9-63
+	android:name
+		ADDED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml:39:19-51
 uses-sdk
 INJECTED from /home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] /home/hi/.android/build-cache/cce10b6d8d9a46917443a24731d36b9790a343de/output/AndroidManifest.xml:20:5-43

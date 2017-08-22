@@ -1,4 +1,4 @@
-#Tue Aug 22 19:51:06 IST 2017
+#Tue Aug 22 23:01:53 IST 2017
 base.0=/home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/build/intermediates/transforms/dex/debug/folders/1000/1f/main
 renamed.0=classes.dex
 file.0=/home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex

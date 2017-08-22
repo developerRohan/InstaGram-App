@@ -824,6 +824,10 @@
         "source": "/Users/robpercival/Desktop/Parse-Server-Starter-Project/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/layout/abc_list_menu_item_checkbox.xml"
     },
     {
+        "merged": "/home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/build/intermediates/res/merged/debug/layout/activity_user_feed.xml",
+        "source": "/home/hi/Downloads/InstantApp/Instagram/ParseStarterProject/src/main/res/layout/activity_user_feed.xml"
+    },
+    {
         "merged": "/Users/robpercival/AndroidStudioProjects/Instagram/ParseStarterProject/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
         "source": "/Users/robpercival/AndroidStudioProjects/Instagram/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/layout/abc_action_menu_item_layout.xml"
     },
